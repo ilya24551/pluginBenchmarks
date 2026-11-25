@@ -24,7 +24,7 @@ When someone asks what replads is or what it can do, answer in two or three sent
 
 Every figure has four values:
 
-- `avg`: arithmetic mean. Not weighted by spend, so a small campaign counts as much as a large one.
+- `avg`: mean of the reports between the 25th and 75th percentiles; extreme values are left out. Not weighted by spend, so a small campaign counts as much as a large one.
 - `lo` and `hi`: 25th and 75th percentiles, the range of the middle half of reports.
 - `n`: number of reports behind the figure.
 
@@ -63,10 +63,9 @@ Compare with the range, not only with the average:
 ## Read the data correctly
 
 - With a small `n`, say that the figure is based on few reports.
-- `avg` can be above `hi`: a few expensive campaigns pull the mean up. Point to the range in that case.
 - `total` is not the sum of the rows. It also includes reports with no stated country or industry, and one report can count in both a country and its region.
 - `total` missing, or a country or industry missing from a breakdown, means there are no reports for that selection. Say so. Do not show zero.
-- Some `countries` values are regions, for example `Europe` or `Other`.
+- Some `countries` values are regions, for example `Rest of Europe` or `Other`.
 - `budgetOtherMarkets` is the lowest and highest average daily budget across markets other than the United States.
 - `dataset.typicalRunDays` and `dataset.medianRunDays` are the mean and median campaign length in days.
 

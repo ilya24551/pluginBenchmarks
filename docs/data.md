@@ -31,7 +31,7 @@ Zeros and dots show the structure only.
 
 | Field | Meaning |
 | --- | --- |
-| `avg` | Arithmetic mean, not weighted by spend |
+| `avg` | Mean of the reports between the 25th and 75th percentiles, not weighted by spend |
 | `lo`, `hi` | 25th and 75th percentiles |
 | `n` | Number of reports |
 
@@ -39,7 +39,6 @@ Zeros and dots show the structure only.
 
 - `total` also includes reports with no stated country or industry. It is not the sum of the rows.
 - One report can count in several markets, for example in a country and its region.
-- `avg` can be above `hi` when a few campaigns are much larger than the rest.
 - `total` is absent when there are no reports for the filters. Filters that are not set are absent too.
 - `dataset` describes all data and does not depend on the filters.
 - `typicalRunDays` and `medianRunDays` are the mean and median campaign length.
