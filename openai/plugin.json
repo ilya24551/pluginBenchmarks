@@ -1,0 +1,99 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "replads",
+  "version": "1.0.0",
+  "description": "Benchmarks for ads in ChatGPT: cost per click, cost per 1,000 impressions, click-through rate and daily budget, by country, industry and currency.",
+  "author": {
+    "name": "Replads",
+    "email": "info@replads.com",
+    "url": "https://replads.com"
+  },
+  "homepage": "https://replads.com",
+  "license": "MIT",
+  "keywords": [
+    "chatgpt-ads",
+    "benchmarks",
+    "advertising",
+    "cpc",
+    "cpm",
+    "ctr"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/replads-benchmarks/SKILL.md",
+      "interface": {
+        "displayName": "replads",
+        "shortDescription": "Benchmarks for ChatGPT ads",
+        "longDescription": "replads shows what ads in ChatGPT cost and how they perform, based on published advertiser reports.\n\nAsk for cost per click, cost per 1,000 impressions, click-through rate and daily budget. Filter by country or region, industry and currency, compare markets, or check your own numbers against the typical range. Every figure comes with the average, the 25th to 75th percentile range and the number of reports.\n\nFor media buyers, agencies and advertisers. replads does not access your ad accounts, does not change campaigns and covers ads in ChatGPT only.",
+        "developerName": "Replads",
+        "category": "Productivity",
+        "capabilities": [],
+        "websiteURL": "https://replads.com",
+        "supportURL": "https://web.replads.com/docs",
+        "privacyPolicyURL": "https://web.replads.com/privacy-policy.html",
+        "termsOfServiceURL": "https://web.replads.com/terms.html",
+        "defaultPrompt": [
+          "What is the average CPC for ads in ChatGPT?",
+          "Compare CPM for ChatGPT ads by industry",
+          "Is a 1.2% CTR good for B2B software?"
+        ],
+        "brandColor": "#06705C",
+        "composerIcon": "./assets/logo.svg",
+        "logo": "./assets/logo.svg"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Single metric for one country",
+              "prompt": "What is the average cost per click for ads in ChatGPT in the United States, in USD?",
+              "tools_triggered": "list_benchmark_filters, get_benchmarks",
+              "expected_behavior": "Returns the United States CPC in USD with the average, the 25th to 75th percentile range and the number of reports."
+            },
+            {
+              "description": "Comparison across industries",
+              "prompt": "Compare CPM for ChatGPT ads across industries in euros.",
+              "tools_triggered": "list_benchmark_filters, get_benchmarks",
+              "expected_behavior": "Calls get_benchmarks once with EUR and no industry filter, then compares the industries from byIndustry."
+            },
+            {
+              "description": "Country and industry together",
+              "prompt": "What daily budget do B2B software advertisers use for ChatGPT ads in the United States?",
+              "tools_triggered": "list_benchmark_filters, get_benchmarks",
+              "expected_behavior": "Uses both filters and reports the budget per day, or says there are no reports for this selection."
+            },
+            {
+              "description": "Checking the user's own number",
+              "prompt": "My ChatGPT ads have a 1.2% CTR in ecommerce. Is that good?",
+              "tools_triggered": "list_benchmark_filters, get_benchmarks",
+              "expected_behavior": "Compares 1.2% with the Ecommerce CTR range and average and says whether it is below, within or above the typical range."
+            },
+            {
+              "description": "Available filters",
+              "prompt": "Which countries, industries and currencies do you have benchmarks for?",
+              "tools_triggered": "list_benchmark_filters",
+              "expected_behavior": "Lists the countries and regions, industries and currencies returned by the tool."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Changing a campaign is not supported. Expected: the plugin says it cannot manage campaigns.",
+              "prompt": "Raise the daily budget of my ChatGPT campaign to 200 dollars."
+            },
+            {
+              "description": "Other platforms are not covered. Expected: the plugin says it only has ChatGPT ads data.",
+              "prompt": "Using replads, what is the average CPC on Google Ads in Germany?"
+            },
+            {
+              "description": "Individual advertisers are not available. Expected: the plugin says it has no data on single advertisers.",
+              "prompt": "Using replads, how much did Nike spend on ChatGPT ads last month?"
+            }
+          ]
+        }
+      },
+      "publication": {
+        "release_notes": "First release: benchmarks for ads in ChatGPT by country, industry and currency."
+      }
+    }
+  }
+}

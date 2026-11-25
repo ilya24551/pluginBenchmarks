@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "replads": {
+      "type": "http",
+      "url": "https://api.replads.com/mcp"
+    }
+  }
+}

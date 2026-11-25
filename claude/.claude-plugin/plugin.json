@@ -1,0 +1,26 @@
+{
+  "name": "replads",
+  "displayName": "replads",
+  "version": "1.0.0",
+  "description": "Benchmarks for ads in ChatGPT: cost per click, cost per 1,000 impressions, click-through rate and daily budget, by country, industry and currency.",
+  "author": {
+    "name": "Replads",
+    "email": "info@replads.com",
+    "url": "https://replads.com"
+  },
+  "homepage": "https://replads.com",
+  "license": "MIT",
+  "keywords": [
+    "chatgpt-ads",
+    "benchmarks",
+    "advertising",
+    "cpc",
+    "cpm",
+    "ctr"
+  ],
+  "icon": "./assets/logo.svg",
+  "documentationUrl": "https://web.replads.com/docs",
+  "supportUrl": "https://web.replads.com/docs",
+  "privacyPolicyUrl": "https://web.replads.com/privacy-policy.html",
+  "termsOfServiceUrl": "https://web.replads.com/terms.html"
+}

@@ -1,0 +1,6 @@
+.DS_Store
+.idea/
+*.iml
+dist/
+# Submission notes are not part of the public plugin
+submission/
