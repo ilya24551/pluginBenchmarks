@@ -50,7 +50,7 @@ CPC, CPM, CTR, and budget may not reconcile with one another. Do not derive one 
 
 ### Read and present results
 
-- Use returned `avg`, `lo`, and `hi` when available. Lead with the requested number, then give the range when useful.
+- Use returned `avg`, `lo`, and `hi` when available; `lo` and `hi` are the lower and upper bound of the typical range. Lead with the requested number, then give the range when useful.
 - Format money below 100 with one decimal and money of 100 or more without decimals; always show the currency.
 - Convert CTR to a percentage with one decimal. Label budget **per day**.
 - Mention `dataset.updated` when asked about freshness.
@@ -59,7 +59,7 @@ CPC, CPM, CTR, and budget may not reconcile with one another. Do not derive one 
 
 ### Plan a new campaign
 
-Estimate clicks as budget / benchmark CPC or impressions as budget / benchmark CPM × 1,000, as separate arithmetic scenarios. Do not combine benchmark CTR with benchmark CPM to predict clicks. Show a range using one metric's `lo` and `hi` values when useful; do not present it as a forecast or probability interval. Daily budget is an observed benchmark, not a platform recommendation or minimum.
+Estimate clicks as budget / benchmark CPC or impressions as budget / benchmark CPM × 1,000, as separate arithmetic scenarios. Show a range using one metric's `lo` and `hi` values when useful; do not present it as a forecast or probability interval. Daily budget is an observed benchmark, not a platform recommendation or minimum.
 
 Examples: “How many site clicks might a $500 ChatGPT Ads test generate?”; “What daily budget and impression range should I plan for a test?”
 
