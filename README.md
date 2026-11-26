@@ -18,5 +18,3 @@ The skill and the logo are edited only in `skills/` and `assets/`. After a chang
 It copies them into both plugins and builds `dist/replads-openai.zip`.
 
 Website: https://replads.com. Support: info@replads.com.
-
-<!-- test commit: verifying write access -->
