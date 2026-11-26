@@ -3,20 +3,7 @@
   "mcpServers": {
     "replads": {
       "type": "streamable-http",
-      "url": "https://api.replads.com/mcp",
-      "extensions": {
-        "com.openai": {
-          "auth": {
-            "type": "oauth",
-            "client": {
-              "mode": "dcr"
-            },
-            "defaultScopes": [
-              "replads.read"
-            ]
-          }
-        }
-      }
+      "url": "https://api.replads.com/mcp"
     }
   }
 }

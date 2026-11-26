@@ -89,6 +89,9 @@ The benchmark connector covers ChatGPT Ads only. It cannot access an advertiser'
 
 ### Errors
 
+- Replads data requires the user to sign in. If the Replads tools are missing, a call returns an authentication error, or the result says "Sign in to Replads", ask the user to sign in before anything else. Never send the bare https://web.replads.com/connect address: the working link carries one-time parameters that only the app can create.
+  - **ChatGPT:** call `list_benchmark_filters` anyway. Without sign-in it returns "Sign in to Replads", and ChatGPT shows a button to sign in. Ask the user to press it, sign in to Replads or create an account, and approve access. Then call the tool again and continue. If there is no button, ask the user to connect Replads in the plugin settings. Do not run commands to sign in and do not open the sign-in page in your own browser: only the user signs in.
+  - **Claude:** ask the user to open Settings → Connectors, choose Replads, and press Connect (or Reconnect). Claude opens the Replads sign-in page; after the user signs in and approves access, call the tool again and continue.
 - If disconnected or access has expired, ask the user to reconnect Replads in the app settings.
 - If a filter is rejected, check `list_benchmark_filters` and retry once with an accepted value.
 - For other errors, state that benchmark data is temporarily unavailable; do not substitute remembered figures.
