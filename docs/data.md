@@ -32,7 +32,7 @@ Zeros and dots show the structure only.
 | Field | Meaning |
 | --- | --- |
 | `avg` | Average |
-| `lo`, `hi` | Typical range: its low and high end |
+| `lo`, `hi` | Lower and upper bound of the typical range |
 
 ## Notes
 
