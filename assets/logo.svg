@@ -4,4 +4,4 @@
 </linearGradient>
 <clipPath id="atl"><path d="M-20-20H52L-20 52Z"></path></clipPath>
 <clipPath id="abr"><path d="M52 52H-20L52-20Z"></path></clipPath>
-</defs><rect width="64" height="64" rx="14" fill="#0b0b0c"></rect><g transform="translate(14 14) scale(1.125)"><g transform="translate(-0.95 -0.95)"><g clip-path="url(#atl)"><rect x="0.95" y="0.95" width="30.1" height="30.1" rx="8.8" fill="#ffffff"></rect></g></g><g transform="translate(0.95 0.95)"><g clip-path="url(#abr)"><rect x="0.95" y="0.95" width="30.1" height="30.1" rx="8.8" fill="url(#ag)"></rect></g></g></g></svg>
+</defs><g transform="translate(14 14) scale(1.125)"><g transform="translate(-0.95 -0.95)"><g clip-path="url(#atl)"><rect x="0.95" y="0.95" width="30.1" height="30.1" rx="8.8" fill="#0b0b0c"></rect></g></g><g transform="translate(0.95 0.95)"><g clip-path="url(#abr)"><rect x="0.95" y="0.95" width="30.1" height="30.1" rx="8.8" fill="url(#ag)"></rect></g></g></g></svg>

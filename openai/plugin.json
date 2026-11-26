@@ -9,7 +9,7 @@
     "url": "https://replads.com"
   },
   "homepage": "https://replads.com",
-  "license": "MIT",
+  "license": "CC-BY-NC-4.0",
   "keywords": [
     "chatgpt-ads",
     "benchmarks",
@@ -20,22 +20,22 @@
   ],
   "extensions": {
     "com.openai": {
-      "onboardingSkill": "./skills/replads-benchmarks/SKILL.md",
+      "onboardingSkill": "./skills/chatgpt-ads-benchmarks/SKILL.md",
       "interface": {
-        "displayName": "replads",
-        "shortDescription": "Benchmarks for ChatGPT ads",
-        "longDescription": "replads shows what ads in ChatGPT cost and how they perform, based on published advertiser reports.\n\nAsk for cost per click, cost per 1,000 impressions, click-through rate and daily budget. Filter by country or region, industry and currency, compare markets, or check your own numbers against the typical range. Every figure comes with the average and the typical range.\n\nFor media buyers, agencies and advertisers. replads does not access your ad accounts, does not change campaigns and covers ads in ChatGPT only.",
+        "displayName": "Replads ChatGPT Ads Benchmarks",
+        "shortDescription": "CPC, CTR & CPM by country",
+        "longDescription": "Replads provides ChatGPT Ads benchmarks for CPC, CPM, CTR and daily campaign budgets, based on publicly available advertiser reports. Check ChatGPT Ads CPC, compare ChatGPT Ads CTR by available country or region, and explore CPM by industry and currency. The data is updated weekly.\n\nWhat is a good CPC in ChatGPT Ads? What is a good CPM or CTR for your category? Use the reported averages and ranges to put your results in context or estimate traffic for a planned budget. Replads does not access your ad account or change campaigns.",
         "developerName": "Replads",
-        "category": "Productivity",
+        "category": "Business & Operations",
         "capabilities": [],
         "websiteURL": "https://replads.com",
         "supportURL": "https://web.replads.com/docs",
         "privacyPolicyURL": "https://web.replads.com/privacy-policy.html",
         "termsOfServiceURL": "https://web.replads.com/terms.html",
         "defaultPrompt": [
-          "What is the average CPC for ads in ChatGPT?",
-          "Compare CPM for ChatGPT ads by industry",
-          "Is a 1.2% CTR good for B2B software?"
+          "What is a good CPC in ChatGPT Ads?",
+          "Estimate clicks from $500 for my brand in the US",
+          "Is a 1.2% CTR good for my brand?"
         ],
         "brandColor": "#06705C",
         "composerIcon": "./assets/logo.svg",
@@ -60,7 +60,7 @@
               "description": "Country and industry together",
               "prompt": "What daily budget do B2B software advertisers use for ChatGPT ads in the United States?",
               "tools_triggered": "list_benchmark_filters, get_benchmarks",
-              "expected_behavior": "Uses both filters and reports the budget per day, or says there is no data for this selection."
+              "expected_behavior": "Uses both filters and reports the budget per day, or says there are no reports for this selection."
             },
             {
               "description": "Checking the user's own number",

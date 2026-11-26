@@ -1,21 +1,32 @@
-MIT License
+Creative Commons Attribution-NonCommercial 4.0 International
+SPDX-License-Identifier: CC-BY-NC-4.0
 
-Copyright (c) 2026 Daria Bazankova, trading as Replads
+Copyright (c) 2026 Replads
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+The original materials in this repository, and the Replads benchmark data and
+aggregate figures made available through this plugin, are licensed by Replads
+under the Creative Commons Attribution-NonCommercial 4.0 International license
+(CC BY-NC 4.0), to the extent Replads holds the rights to license them.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Additional permission from Replads: the NonCommercial condition does not
+restrict use of Replads benchmark data and aggregate figures for research,
+publications, or work within your own company or companies, including campaign
+planning and performance analysis. This permission applies even when that work
+is carried out by a commercial organization or appears in a paid publication.
+All other applicable license conditions, including attribution when sharing,
+continue to apply.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This additional permission does not authorize selling or reselling the Replads
+benchmark data or aggregate figures as a dataset, data feed, or standalone data
+product. Such use requires separate written permission from Replads.
+
+When sharing or citing Replads benchmark data or figures, credit "Replads
+Benchmarks" and link to the source dashboard where the medium permits:
+https://replads.com/chatgpt-ads-benchmarks
+
+The license also requires a link to CC BY-NC 4.0 and an indication of changes
+when applicable. Its complete terms are available at:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+This license does not cover third-party materials or underlying advertiser
+reports except to the extent Replads holds rights in them.
