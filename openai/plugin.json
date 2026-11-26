@@ -24,7 +24,7 @@
       "interface": {
         "displayName": "replads",
         "shortDescription": "Benchmarks for ChatGPT ads",
-        "longDescription": "replads shows what ads in ChatGPT cost and how they perform, based on published advertiser reports.\n\nAsk for cost per click, cost per 1,000 impressions, click-through rate and daily budget. Filter by country or region, industry and currency, compare markets, or check your own numbers against the typical range. Every figure comes with the average, the 25th to 75th percentile range and the number of reports.\n\nFor media buyers, agencies and advertisers. replads does not access your ad accounts, does not change campaigns and covers ads in ChatGPT only.",
+        "longDescription": "replads shows what ads in ChatGPT cost and how they perform, based on published advertiser reports.\n\nAsk for cost per click, cost per 1,000 impressions, click-through rate and daily budget. Filter by country or region, industry and currency, compare markets, or check your own numbers against the typical range. Every figure comes with the average and the typical range.\n\nFor media buyers, agencies and advertisers. replads does not access your ad accounts, does not change campaigns and covers ads in ChatGPT only.",
         "developerName": "Replads",
         "category": "Productivity",
         "capabilities": [],
@@ -48,7 +48,7 @@
               "description": "Single metric for one country",
               "prompt": "What is the average cost per click for ads in ChatGPT in the United States, in USD?",
               "tools_triggered": "list_benchmark_filters, get_benchmarks",
-              "expected_behavior": "Returns the United States CPC in USD with the average, the 25th to 75th percentile range and the number of reports."
+              "expected_behavior": "Returns the United States CPC in USD with the average and the typical range."
             },
             {
               "description": "Comparison across industries",
@@ -60,7 +60,7 @@
               "description": "Country and industry together",
               "prompt": "What daily budget do B2B software advertisers use for ChatGPT ads in the United States?",
               "tools_triggered": "list_benchmark_filters, get_benchmarks",
-              "expected_behavior": "Uses both filters and reports the budget per day, or says there are no reports for this selection."
+              "expected_behavior": "Uses both filters and reports the budget per day, or says there is no data for this selection."
             },
             {
               "description": "Checking the user's own number",

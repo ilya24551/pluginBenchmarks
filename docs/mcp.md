@@ -2,7 +2,7 @@
 
 - Address: `https://api.replads.com/mcp`
 - Transport: Streamable HTTP
-- Access: OAuth 2.0, or an MCP key in `Authorization: Bearer`
+- Access: OAuth 2.0
 - Scope: `replads.read`
 
 Both tools are read only.
